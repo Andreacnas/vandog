@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/artist_test.css">
+
+  <title>Vincent Van-Dog | Artist Test</title>
+</head>
+
+<body>
+
+  <!-- Menu -->
+  <script src="./scripts/navbar.js"></script>
+
+  <!-- Main section -->
+  <main>
+
+    <h1 class="titleTest">Find out if you are a natural born artist like Vicent Van-Dog!</h1>
+ 
+    <section class="mainBox"> 
+    <!-- Slideshow  -->
+    <div class="boxGallery">
+      <img name="slide" alt="Gallery pictures" class="imagesGallery" />
+    </div>
+    
+    <!-- Artist Test -->
+
+    <!-- Top -->
+    <form action="artist_test.html" class="form_test" id="artist_test">
+      <fieldset class="artistTest">
+        <legend class="testLegend">Artist Test</legend>
+
+        <!-- Sections -->
+
+        <!-- Question 1 -->
+        <span>A) What are the primary colors?</span>
+        <br>
+        <input type="radio" name="a1" id="option_a1" value="A">
+        <label for="option_a1" id="option_a1">Red, Blue, and Yellow</label>
+        <br>
+        <input type="radio" name="a1" id="option_a2" value="B">
+        <label for="option_a2">White, Green, and Purple</label>
+        <br>
+        <input type="radio" name="a1" id="option_a3" value="C">
+        <label for="option_a3">They are all on the color wheel</label>
+        <br>
+
+        <!-- Question 2 -->
+        <span>B) I am very imaginative</span>
+        <br>
+        <input type="radio" name="a2" id="option_b1" value="A">
+        <label for="option_b1">Agree</label>
+        <br>
+        <input type="radio" name="a2" id="option_b2" value="B">
+        <label for="option_b2">Neutral</label>
+        <br>
+        <input type="radio" name="a2" id="option_b3" value="C">
+        <label for="option_b3">Disagree</label>
+        <br>
+
+        <!-- Question 3 -->
+        <span>C) What are the elements of art?</span>
+        <br>
+        <input type="radio" name="a3" id="option_c1" value="A">
+        <label for="option_c1">Line, Shape, Form, Space, Value, Color, and Texture</label>
+        <br>
+        <input type="radio" name="a3" id="option_c2" value="B">
+        <label for="option_c2">Circle, Rectangle, Triangle, Trapezoid, and Square </label>
+        <br>
+        <input type="radio" name="a3" id="option_c3" value="C">
+        <label for="option_c3">They are all found on the Periodic Table</label>
+        <br>
+
+        <!-- Question 4 -->
+        <span>D) Being flexible is more important than being organized</span>
+        <br>
+        <input type="radio" name="a4" id="option_d1" value="A">
+        <label for="option_d1">Agree</label>
+        <br>
+        <input type="radio" name="a4" id="option_d2" value="B">
+        <label for="option_d2">Neutral</label>
+        <br>
+        <input type="radio" name="a4" id="option_d3" value="C">
+        <label for="option_d3">Disagree</label>
+        <br>
+
+        <!-- Question 5 -->
+        <span>E) Where Vincent Van-Dog was born?</span>
+        <br>
+        <input type="radio" name="a5" id="option_e1" value="A">
+        <label for="option_e1">Canada</label>
+        <br>
+        <input type="radio" name="a5" id="option_e2" value="B">
+        <label for="option_e2">Mars</label>
+        <br>
+        <input type="radio" name="a5" id="option_e3" value="C">
+        <label for="option_e3">Jupiter</label>
+        <br>
+
+        <!-- Submit button -->
+        <div class="resultDiv">
+          <button type="button" onclick="calcResult()" id="testButton">Check Results</button>
+
+          <!-- Results -->
+          <div class="resultTest"></div>
+        </div>
+
+      </fieldset>
+    </form>
+  </section>
+
+    <!-- Footer -->
+
+    <script src="./scripts/footer.js"></script>
+
+  </main>
+
+  <script src="./scripts/artist_test.js"></script>
+</body>
+
+</html>

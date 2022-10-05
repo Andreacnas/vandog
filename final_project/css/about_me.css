@@ -1,0 +1,96 @@
+/* hide input number arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* elements by type */
+* {
+    font-family: "Montserrat", sans-serif;
+}
+header {
+    text-align: center;
+    margin: 40px 0px;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+    min-height: 100vh;
+}
+
+/* About page */
+
+.titleAbout {
+    text-align: center;
+    border-bottom: 1px solid #ff5757;
+    margin: 0 62px 30px 62px;
+    padding-bottom: 3px;
+    font-size: 200%;
+}
+
+
+.imagesVd {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 30%;
+    max-height: 30%;
+    border-radius: 20%;
+}
+
+.boxVd {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
+
+.briefHistory {
+    color: #000000;
+    text-align: justify;
+    margin: 0 8em 2em 8em;
+    font-weight: 150;
+    font-size: 130%;
+}
+
+/* The code below is regarding responsive design */
+
+/* Tablet screen */
+
+@media only screen and (max-width: 768px) {
+    h1.titleAbout {
+        font-size: 200%;
+        /* margin-right: 30px; */
+    }
+
+    h2.briefHistory {
+        font-size: 100%;
+    }
+}
+
+/* Mobile screen */
+
+@media only screen and (max-width: 576px) {
+    h1.titleAbout {
+        font-size: 200%;
+        margin-right: 30px;
+    }
+
+    h2.briefHistory {
+        font-size: 110%;
+    }
+
+    .boxVd {
+        width: 140%;
+    }
+
+    .imagesVd {
+        margin-right: 200px;
+    }
+}

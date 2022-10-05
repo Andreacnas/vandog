@@ -1,0 +1,255 @@
+/* hide input number arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* elements by type */
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Main */
+
+main {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Visit Us page */
+
+.apptInformation {
+    display: flex;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 50px;
+
+}
+
+h1 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 15px;
+}
+
+.apptTitle {
+    margin-left: 30px;
+    flex: 1;
+    margin: 0 0 10px 10px;
+    display: inline-block;
+}
+
+.apptP {
+    margin: 10px;
+    width: 650px;
+}
+
+.imagesGallery {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    height: 300px;
+    width: 400px;
+}
+
+.sectionAppointment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: inline-block;
+    margin-left: 80px;
+}
+
+form.appt {
+    display: none;
+}
+
+fieldset.apptField {
+    border: none;
+    max-width: 600px;
+    min-width: 500px;
+    width: 50%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    padding: 16px;
+}
+
+legend.apptLegend {
+    background: #f39696;
+    ;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 5px #f8cbaa;
+    margin-bottom: 30px;
+    margin: 0;
+    width: 80%;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: auto;
+    outline: 0;
+    padding: 8px;
+    width: 80%;
+    background-color: #f3f3f3;
+    color: black;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+    margin-bottom: 30px;
+}
+
+label.apptInfo {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+label.apptSchedule {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+#apptButton {
+    color: #FFF;
+    background-color: #ff5757;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#apptButton:hover,
+#apptButton:focus {
+    background-color: #f39696;
+}
+
+#secondButton {
+    margin-left: 50px;
+    margin-bottom: 50px;
+    padding: 12px;
+    color: #FFF;
+    background-color: #ff5757;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+}
+
+#secondButton:hover,
+#secondButton:focus {
+    background-color: #f39696;
+}
+
+
+/* The code below is regarding responsive design */
+
+/* Tablet screen */
+
+@media only screen and (max-width: 768px) {
+    main {
+        margin-left: -30px;
+
+    }
+
+    .imagesGallery {
+        width: 25rem;
+        height: 17rem;
+    }
+
+    h1 {        
+        font-size: 15px;
+    }
+    
+    p {       
+        font-size: 9px;
+    }
+
+    #apptButton {
+        font-size: 90%;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .apptInfo {
+        font-size: 90%;
+        margin-left: 40px;
+    }
+
+    .apptField {
+        padding-right: 120px;
+    }
+}
+
+/* Mobile screen */
+
+@media only screen and (max-width: 576px) {
+    main {
+        margin-left: -50px;
+
+    }
+
+    .imagesGallery {
+        width: 30rem;
+        height: 22rem;
+    }
+
+    .apptInformation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {        
+        font-size: 15px;
+    }
+    
+    p {       
+        font-size: 10px;
+    }
+
+    .apptTitle {
+        margin-top: 20px;
+    }
+
+    #apptButton {
+        font-size: 150%;
+        padding-left: 130px;
+        padding-right: 130px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .apptInfo {
+        font-size: 120%;
+        margin-left: 40px;
+    }
+
+}

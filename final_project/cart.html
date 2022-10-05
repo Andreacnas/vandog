@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vincent Van-Dog | Cart</title>
+        <meta charset="utf-8">
+        <meta name="descrition" content="dummy shopping cart page">
+        <meta name="keywords" content="Vincent Van-Dog, shop, souvenir, poster, notebook, card, key chain">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/shop.css">
+        <script src="./scripts/minusPlusBtn.js"></script>
+        <script src="./scripts/cart.js"></script>
+    </head>
+    
+    <body>
+        <script src="./scripts/navbar.js"></script>
+        <header>
+            <h1>Vincent Van-Dog's Shopping Cart</h1><br>
+            <p>
+                Handmade stationery, art prints & paintings.<br>
+                Free shipping in Canada on all orders over $59.
+            </p><br>
+            <hr>
+        </header>
+
+        <form>
+            <div id="cart">
+                <div id="cart-product"></div>
+                <div id="cart-sidebar">
+                    <input type="checkbox" id="check-all" name="check-all" value="Check All" onclick="checkAll()">
+                    <label for="check-all" id="check-all-label">Select all items</label>
+                    <p id="subtotal">
+                        Subtotal (0 item): CAD $0.00<br>
+                        GST/HST: CAD $0.00<br>
+                        Total: CAD $0.00
+                    </p>
+                    <button name="submit" class="submit" type="submit" value="Checkout">CHECKOUT</button>
+                </div>
+            </div>
+        </form><br>
+
+        <script src="./scripts/footer.js"></script>
+    </body>
+</html>

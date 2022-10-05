@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.contactUs {
+  width: 98vw;
+  overflow-x: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.contactUs .container {
+  background-color: #fff;
+  width: 600px;
+  height: 500px;
+  border-radius: 10px;
+  margin: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 1.5;
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
+}
+
+.contactUs .container__items {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.contactUs .container::after {
+  content: "";
+  position: absolute;
+  background: #d28480;
+  background: linear-gradient(135deg, #ff5757 20%, #ffd07e 100%);
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.contactUs .container img {
+  padding-left: 20px;
+  width: 250px;
+  height: 400px;
+}
+
+.contactUs .container-text {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0px 40px 10px 10px;
+  margin-top: -10px;
+}
+
+.contactUs .container-text h1 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 25px;
+  color: #1a2250;
+}
+
+.contactUs .container-text h1 span {
+  font-size: 35px;
+  color: #d28480;
+}
+
+.contactUs .container-text h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.contactUs .container-text p {
+  font-size: 14px;
+  color: #3b4169;
+  margin: 10px 0;
+}
+
+.contactUs .container-text input,
+.contactUs .container-text button {
+  width: 100%;
+  border: none;
+  padding: 14px;
+  border-radius: 3px;
+}
+
+.contactUs .container-text input,
+.contactUs .container-text .textArea {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 2px solid #daddec;
+  margin: 5px 0 10px;
+  font-size: 1rem;
+  color: #656880;
+  border-color: #65688074;
+}
+
+.contactUs .container-text textarea {
+  padding-left: 10px;
+  font-size: 1rem;
+  color: #656880b4;
+  border-color: #65688074;
+}
+
+.contactUs .container-text .letsMeet {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff5757), to(#f39696));
+  background-image: linear-gradient(to right, #ff5757, #f39696);
+  display: block;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+}
+
+/* Validation Messages of FORM */
+.invalid,
+#text-error-message {
+  margin-top: -5px;
+  position: absolute;
+  color: red;
+  font-size: 0.7rem !important;
+}
+.inputText {
+  margin-top: 15px;
+  position: relative;
+  display: flex;
+  justify-content: right;
+}
+#text-char-count {
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: -5px;
+}
+#text-error-message {
+  bottom: -5px;
+  left: 0px;
+}
+
+@media (max-width: 1024px) {
+  .contactUs .container {
+    width: 400px;
+    height: 350px;
+    margin: 100px;
+  }
+  .contactUs .container img {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    -o-object-fit: fill;
+    object-fit: fill;
+    -o-object-position: 0rem -1.5rem;
+    object-position: 0rem -1.5rem;
+    -webkit-transform: translate(-150%, -70%);
+    transform: translate(-150%, -70%);
+  }
+  .contactUs .container::after {
+    background: linear-gradient(135deg, #ff5757 20%, #ffd07e 100%);
+    width: 550px;
+    height: 550px;
+  }
+  .contactUs .container-text {
+    width: 400px;
+    height: 100%;
+    padding: 10px;
+  }
+  .contactUs .container-text .letsMeet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 120px;
+  }
+  .contactUs .container h1 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .contactUs .container h1 span {
+    font-size: 1.5rem;
+  }
+  .contactUs .container h2 {
+    margin-left: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: end;
+  }
+  .contactUs textarea {
+    height: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contactUs .container {
+    width: 400px;
+    height: 350px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .contactUs .container img {
+    position: relative;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    height: 200px;
+    width: 200px;
+  }
+  .contactUs .container::after {
+    display: none;
+  }
+  .contactUs .container-text {
+    max-width: 550px;
+    min-width: 300px;
+    height: 100%;
+    padding: 10px;
+  }
+  .contactUs .container-text .letsMeet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 120px;
+  }
+  .contactUs .container h1 {
+    margin-top: 0px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .contactUs .container h1 span {
+    font-size: 1.5rem;
+  }
+  .contactUs .container h2 {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: end;
+  }
+  .contactUs textarea {
+    height: 50px;
+    column-rule-width: 50ch;
+  }
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vincent Van-Dog | Product</title>
+        <meta charset="utf-8">
+        <meta name="descrition" content="one page for a product detail">
+        <meta name="keywords" content="Vincent Van-Dog, shop, souvenir, poster, notebook, card, key chain">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/shop.css">
+        <script src="./scripts/minusPlusBtn.js"></script>
+        <script src="./scripts/product.js"></script>
+    </head>
+    
+    <body>
+        <script src="./scripts/navbar.js"></script>
+        <header>
+            <h1>Vincent Van-Dog's Product Details</h1><br>
+            <p>
+                Handmade stationery, art prints & paintings.<br>
+                Free shipping in Canada on all orders over $59.
+            </p><br>
+            <hr>
+        </header>
+
+        <main id="product">
+            <div class="margin-auto">
+                <img src="./images/vv_in_orange.jpg" alt="A poster of Vincent Van-Dog portrait" class="poster-size" name="slides-poster" id="slides-poster">
+            </div>
+            <div>
+                <h3>Specifications - Poster</h3><br>
+                <ul>
+                    <li>72 x 48 cm; 240g cardboard; clear printing & never fade.</li>
+                    <li>You can straight stick them or hang these posters with clips on the wall.</li>
+                    <li>Ideal gifts for party, birthday, graduations, valentine's day and more other occasions. </li>
+                </ul><br>
+                <span>Price : CAD $8.00</span><br><br>
+                <form>
+                    <span>Version:</span><br>
+                    <input type="radio" id="vv_in_orange" name="buy_poster" value="Poster - Vincent Van-Dog in Orange Shirt" onclick="showImg('slides-poster', 'vv_in_orange')">
+                    <label for="vv_in_orange">Orange Shirt</label>
+                    <input type="radio" id="vv_in_pink" name="buy_poster" value="Poster - Vincent Van-Dog in Pink Shirt" onclick="showImg('slides-poster', 'vv_in_pink')">
+                    <label for="vv_in_pink">Pink Shirt</label><br id="product-large-screen">
+                    <input type="radio" id="vv_in_yellow" name="buy_poster" value="Poster - Vincent Van-Dog in Yellow Shirt" onclick="showImg('slides-poster', 'vv_in_yellow')">
+                    <label for="vv_in_yellow">Yellow Shirt</label>
+                    <input type="radio" id="vv_life" name="buy_poster" value="Poster - Vincent Van-Dog Life Photo" onclick="showImg('slides-poster', 'vv_life')">
+                    <label for="vv_life">Life Photo</label>
+                    <br><br>
+                    <button type="button" class="minus" name="minus" value="Minus One" onclick="minusOne('poster_number')">-</button>
+                    <input type="number" id="poster_number" name="poster_number" min="0" value="0" class="product_number">
+                    <button type="button" class="plus" name="plus" value="Plus One" onclick="plusOne('poster_number')">+</button>
+                    <br><br>
+                    <button name="submit" class="submit" type="submit" value="Add to Cart">Add to Cart</button>
+                </form>
+            </div>
+            <div class="margin-auto">
+                <img src="./images/vv_in_pink_card.jpg" alt="A poster of Vincent Van-Dog portrait" class="card-size" name="slides-card" id="slides-card">
+            </div>
+            <div>
+                <h3>Specifications - Card</h3><br>
+                <ul>
+                    <li>A6 format card (105mm x 148mm) and left blank for your own message.</li>
+                    <li>Natural white paper 320g with a recycled brown A6 envelope.</li>
+                    <li>Perfect for sending any notes or greetings to friends.</li>
+                </ul><br>
+                <span>Price : CAD $3.50</span><br><br>
+                <form>
+                    <span>Version:</span><br>
+                    <input type="radio" id="vv_in_orange_card" name="buy_card" value="Card - Vincent Van-Dog in Orange Shirt" onclick="showImg('slides-card', 'vv_in_orange_card')">
+                    <label for="vv_in_orange_card">Orange Shirt</label>
+                    <input type="radio" id="vv_in_pink_card" name="buy_card" value="Card - Vincent Van-Dog in Pink Shirt" onclick="showImg('slides-card', 'vv_in_pink_card')">
+                    <label for="vv_in_pink_card">Pink Shirt</label><br id="product-large-screen">
+                    <input type="radio" id="vv_in_yellow_card" name="buy_card" value="Card - Vincent Van-Dog in Yellow Shirt" onclick="showImg('slides-card', 'vv_in_yellow_card')">
+                    <label for="vv_in_yellow_card">Yellow Shirt</label>
+                    <input type="radio" id="vv_life_card" name="buy_card" value="Card - Vincent Van-Dog Life Photo" onclick="showImg('slides-card', 'vv_life_card')">
+                    <label for="vv_life_card">Life Photo</label>
+                    <br><br>
+                    <button type="button" class="minus" name="minus" value="Minus One" onclick="minusOne('card_number')">-</button>
+                    <input type="number" id="card_number" name="card_number" min="0" value="0" class="product_number">
+                    <button type="button" class="plus" name="plus" value="Plus One" onclick="plusOne('card_number')">+</button>
+                    <br><br>
+                    <button name="submit" class="submit" type="submit" value="Add to Cart">Add to Cart</button>
+                </form>
+            </div>
+            <div class="margin-auto">
+                <img src="./images/vv_in_yellow_nb.jpg" alt="A notebook of Vincent Van-Dog portrait" class="nb-size" name="slides-nb" id="slides-nb">
+            </div>
+            <div>
+                <h3>Specifications - Notebook</h3><br>
+                <ul>
+                    <li>200 pages (100 sheets) of 11 x 8.5 in, college ruled, high quality paper resists ink bleed.</li>
+                    <li>Water resistant poly covers protect sheets.</li>
+                    <li>Perfect for any to-do list, morning pages, creative writing, or note-taking.</li>
+                </ul><br>
+                <span>Price : CAD $10.50</span><br><br>
+                <form>
+                    <span>Version:</span><br>
+                    <input type="radio" id="vv_in_orange_nb" name="buy_nb" value="Notebook - Vincent Van-Dog in Orange Shirt" onclick="showImg('slides-nb', 'vv_in_orange_nb')">
+                    <label for="vv_in_orange_nb">Orange Shirt</label>
+                    <input type="radio" id="vv_in_pink_nb" name="buy_nb" value="Notebook - Vincent Van-Dog in Pink Shirt" onclick="showImg('slides-nb', 'vv_in_pink_nb')">
+                    <label for="vv_in_pink_nb">Pink Shirt</label><br id="product-large-screen">
+                    <input type="radio" id="vv_in_yellow_nb" name="buy_nb" value="Notebook - Vincent Van-Dog in Yellow Shirt" onclick="showImg('slides-nb', 'vv_in_yellow_nb')">
+                    <label for="vv_in_yellow_nb">Yellow Shirt</label>
+                    <input type="radio" id="vv_life_nb" name="buy_nb" value="Notebook - Vincent Van-Dog Life Photo" onclick="showImg('slides-nb', 'vv_life_nb')">
+                    <label for="vv_life_nb">Life Photo</label>
+                    <br><br>
+                    <button type="button" class="minus" name="minus" value="Minus One" onclick="minusOne('nb_number')">-</button>
+                    <input type="number" id="nb_number" name="nb_number" min="0" value="0" class="product_number">
+                    <button type="button" class="plus" name="plus" value="Plus One" onclick="plusOne('nb_number')">+</button>
+                    <br><br>
+                    <button name="submit" class="submit" type="submit" value="Add to Cart">Add to Cart</button>
+                </form>
+            </div>
+            <div class="margin-auto">
+                <img src="./images/vv_life_kc.jpg" alt="A kaychain of Vincent Van-Dog portrait" class="kc-size" name="slides-kc" id="slides-kc">
+            </div>
+            <div>
+                <h3>Specifications - Key Chain</h3><br>
+                <ul>
+                    <li>The size is 30*30mm which contains lovely Vincent Van-Dog photos.</li>
+                    <li>Made of stainless steel and the soldered and firmly close connecting ring.</li>
+                    <li>Ideal gifts for many occasions, such as daily wear at home or office, party, club, engagement, wedding, congratulations for new job, etc. </li>
+                </ul><br>
+                <span>Price : CAD $2.99</span><br><br>
+                <form>
+                    <span>Version:</span><br>
+                    <input type="radio" id="vv_in_orange_kc" name="buy_kc" value="Keychain - Vincent Van-Dog in Orange Shirt" onclick="showImg('slides-kc', 'vv_in_orange_kc')">
+                    <label for="vv_in_orange_kc">Orange Shirt</label>
+                    <input type="radio" id="vv_in_pink_kc" name="buy_kc" value="Keychain - Vincent Van-Dog in Pink Shirt" onclick="showImg('slides-kc', 'vv_in_pink_kc')">
+                    <label for="vv_in_pink_kc">Pink Shirt</label><br id="product-large-screen">
+                    <input type="radio" id="vv_in_yellow_kc" name="buy_kc" value="Keychain - Vincent Van-Dog in Yellow Shirt" onclick="showImg('slides-kc', 'vv_in_yellow_kc')">
+                    <label for="vv_in_yellow_kc">Yellow Shirt</label>
+                    <input type="radio" id="vv_life_kc" name="buy_kc" value="Keychain - Vincent Van-Dog Life Photo" onclick="showImg('slides-kc', 'vv_life_kc')">
+                    <label for="vv_life_kc">Life Photo</label>
+                    <br><br>
+                    <button type="button" class="minus" name="minus" value="Minus One" onclick="minusOne('kc_number')">-</button>
+                    <input type="number" id="kc_number" name="kc_number" min="0" value="0" class="product_number">
+                    <button type="button" class="plus" name="plus" value="Plus One" onclick="plusOne('kc_number')">+</button>
+                    <br><br>
+                    <button name="submit" class="submit" type="submit" value="Add to Cart">Add to Cart</button>
+                </form>
+            </div>
+        </main>
+        
+        <script src="./scripts/footer.js"></script>
+    </body>
+</html>

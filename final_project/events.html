@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/c331e0ecf1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/events.css" />
+
+    <title>Contact US - Vincent Van-Dog</title>
+  </head>
+  <body id="body">
+    <!-- Start: Injecting Navbar with JS-->
+    <script src="./scripts/navbar.js"></script>
+    <!-- End: Injecting Navbar with JS-->
+    <section class="hero" id="hero">
+      <div class="hero__text">
+        <h2>Events</h2>
+        <h1>Best events you'll ever see in the <span>Animal Kingdom</span></h1>
+        <p>
+          Vincent wants to bring everyone together, check out our events where you and your family
+          can meet tons of <b> new furry friends</b>
+        </p>
+      </div>
+      <img
+        src="https://www.petcompanionmag.com/wp-content/uploads/2020/06/events.png"
+        alt="two happy dogs"
+        class="hero__img"
+      />
+    </section>
+    <section class="cardContainer" id="cardContainer">
+      <span class="card" id="card1">
+        <img
+          src="https://i.pinimg.com/564x/31/37/62/313762aea058b18873a225d9180db685.jpg"
+          alt="little kid with a cute animal"
+          class="card__img"
+        />
+        <h3 class="card__title">FFF: Farm, friends and Family!</h3>
+        <p class="card__text">
+          FFF is an event held during the summer. Have a great time with your family while meeting
+          our little furry friends.
+        </p>
+        <button id="event-btn" class="btn-join" type="button" onclick="modalOn()">More Info</button>
+      </span>
+      <span class="card" id="card2">
+        <img
+          src="https://www.mcleanvet.com/wp-content/uploads/sites/31/2018/06/dogpark.jpg"
+          alt="puppies running in the park"
+          class="card__img"
+        />
+        <h3 class="card__title">Puppy fest</h3>
+        <p class="card__text">
+          You like puppies? So do we, come join us this Nov 10th at High Park
+        </p>
+        <button id="event-btn" class="btn-join" type="button" onclick="modalOn()">More Info</button>
+      </span>
+      <span class="card" id="card3">
+        <img
+          src="https://media.istockphoto.com/vectors/geometric-banner-megaphone-with-coming-soon-bubble-loudspeaker-modern-vector-id1181378326?k=20&m=1181378326&s=612x612&w=0&h=FUstjwTm6ZOYSHkusiHSsPHUV7kSGDnmRF18QDy-AO8="
+          alt="comming soon"
+          class="card__img"
+        />
+        <h3 class="card__title">Comming Soon</h3>
+        <p class="card__text">We are working in more events for you.....stay tuned</p>
+        <button class="btn-join" type="button" id="btn-!active">More Info</button>
+      </span>
+      <span class="card" id="card4">
+        <img
+          src="https://media.istockphoto.com/vectors/geometric-banner-megaphone-with-coming-soon-bubble-loudspeaker-modern-vector-id1181378326?k=20&m=1181378326&s=612x612&w=0&h=FUstjwTm6ZOYSHkusiHSsPHUV7kSGDnmRF18QDy-AO8="
+          alt="comming soon"
+          class="card__img"
+        />
+        <h3 class="card__title">Comming Soon</h3>
+        <p class="card__text">We are working in more events for you.....stay tuned</p>
+        <button class="btn-join" type="button" id="btn-!active">More Info</button>
+      </span>
+    </section>
+    <script src="./scripts/footer.js"></script>
+    <script src="./scripts/events.js"></script>
+
+    <div id="modal" class="modal" type="noActive">
+      <div id="modal" class="modal-content">
+        <h3 id="modal_name" class="modal_name"></h3>
+        <p id="modal_content" class="modal_content"></p>
+        <p id="modal_date" class="modal_date"></p>
+        <p id="modal_price" class="modal_price"></p>
+        <a id="modal_link" href="">Join the Event</a>
+        <button onclick="modalOff()">X</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/c331e0ecf1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/services.css" />
+
+    <title>Services - Vincent Van-Dog</title>
+  </head>
+  <body onload="slideImgs()">
+    <!-- Start: Injecting Navbar with JS-->
+    <script src="./scripts/navbar.js"></script>
+    <!-- End: Injecting Navbar with JS-->
+
+    <section class="hero-s" id="hero">
+      <div class="hero-services">
+        <h1>Farm, Friends, and Family!</h1>
+        <p>
+          FFF is an event held during the summer. Have a great time with your family while meeting
+          our little furry friends.
+        </p>
+        <button type="button">Subscribe!</button>
+      </div>
+      <img
+        src="https://i.pinimg.com/564x/31/37/62/313762aea058b18873a225d9180db685.jpg"
+        alt="two happy dogs"
+        class="hero__img"
+      />
+    </section>
+    <section class="carousel" id="carousel">
+      <h3>Look at some of our photos</h3>
+      <div class="carousel__images">
+        <img active="yes" class="carousel-img c1" src="./images/services_carousel1.webp" alt="" />
+        <img active="no" class="carousel-img c2" src="./images/services_carousel2.webp" alt="" />
+        <img active="no" class="carousel-img c3" src="./images/services_carousel3.jpg" alt="" />
+        <img active="no" class="carousel-img c4" src="./images/services_carousel4.jpg" alt="" />
+      </div>
+    </section>
+    <script src="./scripts/footer.js"></script>
+    <script src="./scripts/services.js"></script>
+  </body>
+</html>

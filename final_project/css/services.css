@@ -1,0 +1,119 @@
+.hero-s {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.hero-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+.hero-services h1 {
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.hero-services p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+  padding: 0 1.5rem;
+}
+
+.hero-services button {
+  width: 8rem;
+  height: 2.1em;
+  font-size: 1.2rem;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  cursor: pointer;
+  background-color: #ff5757;
+  border: none;
+  color: white;
+  border-radius: 15px;
+  position: absolute;
+  top: 130%;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.carousel img {
+  position: relative;
+  margin: auto;
+  width: 45rem;
+  height: 25rem;
+  display: none;
+  border-radius: 15px;
+  border: 6px solid rgb(184, 101, 24);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.714);
+}
+
+.carousel .c1,
+.carousel .c2,
+.carousel .c3,
+.carousel .c4 {
+  -webkit-animation-name: showImg;
+  animation-name: showImg;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: none;
+  animation-iteration-count: none;
+}
+
+@-webkit-keyframes showImg {
+  0% {
+    opacity: 0;
+    z-index: 100;
+  }
+  100% {
+    opacity: 1;
+    z-index: 100;
+  }
+}
+
+@keyframes showImg {
+  0% {
+    opacity: 0;
+    z-index: 100;
+  }
+  100% {
+    opacity: 1;
+    z-index: 100;
+  }
+}

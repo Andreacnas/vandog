@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/c331e0ecf1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/contat_us.css" />
+    <link rel="import" href="./events.html" />
+
+    <title>Contact US - Vincent Van-Dog</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div include-html="./events.html"></div>
+    <!-- Start: Injecting Navbar with JS-->
+    <script src="./scripts/navbar.js"></script>
+    <!-- End: Injecting Navbar with JS-->
+
+    <section id="contactUs" class="contactUs">
+      <div id="container" class="container">
+        <img src="./images/vincent van-dog_contact_us.jpg" alt="image" />
+        <div id="container-text" class="container-text">
+          <h1>Hi, i'm <span>Vincent </span></h1>
+          <h2>Woof! nothing i love more than meeting new people ... except for chasing cars</h2>
+          <div class="inputMail">
+            <input id="mail" type="email" placeholder="Email address" />
+            <h2 id="mail-error-message" aria-hidden="true"></h2>
+          </div>
+          <div class="inputText">
+            <textarea id="message" class="textArea" name="" rows="5" maxlength="100"></textarea>
+            <h2 id="text-char-count">0/100</h2>
+            <h2 id="text-error-message" aria-hidden="true"></h2>
+          </div>
+          <button type="submit" class="letsMeet" onclick="sendMessage()">Let's meet!</button>
+        </div>
+      </div>
+    </section>
+    <script src="./scripts/footer.js"></script>
+    <script src="./scripts/navbar_active.js"></script>
+    <script src="./scripts/contact_us.js"></script>
+  </body>
+</html>

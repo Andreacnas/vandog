@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/visit_us.css">
+
+    <title>Vincent Van-Dog | Visit Us</title>
+
+    
+</head>
+
+<body>
+
+    <!-- Menu -->
+
+    <script src="./scripts/navbar.js"></script>
+   
+    <!-- Main section -->
+    <main>
+
+        <div class="apptInformation">
+
+            <img src="./images/art_galleryvd.png" alt="Vincent Van-Dog's Art Gallery" class="imagesGallery">
+
+            <div class="apptTitle">
+            <h1 class="apptTitle">Visit us</h1>
+            <p class="apptP">Admission for Van-Dog's gallery is completely free <br>and welcomes everybody.
+              <br>  Please previously register yourself before visiting the gallery.</p>
+
+            <h1 class="apptTitle">Hours</h1>
+            <p class="apptP">Thursday to Sunday: 11am to 9pm<br>
+                Closed Mondays, Tuesdays and Wednesdays.</p>
+            </div>    
+        </div>
+
+        <section class="sectionAppointment">
+
+
+            <button type="submit" id="apptButton" value="register">Register Now!</button>
+
+            <form action="" name="regForm" class="appt" id="apptForm" onsubmit="return confirmationForm()" method="post">
+                <fieldset class="apptField">
+
+                    <legend class="apptLegend">Your info</legend>
+
+                    <label for="name" class="apptInfo">Name:</label>
+                    <input type="text" name="name" id="apptName" autofocus required><br>
+
+                    <label for="phone" class="apptInfo">Phone:</label>
+                    <input type="tel" name="phone" id="apptPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" required><br>
+
+                    <label for="email" class="apptInfo">E-mail:</label>
+                    <input type="email" name="email" id="apptEmail" placeholder="your@email.com"><br>
+
+                    <label for="password" class="apptInfo">Password:</label>
+                    <input type="password" name="password" id="apptPassword" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">                  
+
+                </fieldset>
+
+                <button type="submit" id="secondButton" value="submit">Submit</button>
+                
+            </form>
+    
+
+        </section>
+    </main>
+
+        <!-- Footer -->
+
+        <script src="./scripts/footer.js"></script>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+    <script src="./scripts/visit_us.js"></script>
+
+</body>
+
+</html>
